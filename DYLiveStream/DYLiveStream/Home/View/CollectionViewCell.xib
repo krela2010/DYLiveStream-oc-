@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="346" height="77"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="346" height="77"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lze-vW-8dR">
+                        <rect key="frame" x="0.0" y="0.0" width="346" height="77"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXn-n0-pmp">
+                        <rect key="frame" x="0.0" y="56" width="200" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="200" id="3DK-3J-LpK"/>
+                            <constraint firstAttribute="height" constant="21" id="gN7-hO-P8L"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="sXn-n0-pmp" secondAttribute="bottom" id="Gi0-7e-m4L"/>
+                <constraint firstItem="lze-vW-8dR" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="U2d-Wg-yez"/>
+                <constraint firstAttribute="trailing" secondItem="lze-vW-8dR" secondAttribute="trailing" id="V5L-EB-Hhy"/>
+                <constraint firstItem="lze-vW-8dR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="fLc-SB-MnY"/>
+                <constraint firstItem="sXn-n0-pmp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="qoP-VG-mYu"/>
+                <constraint firstAttribute="bottom" secondItem="lze-vW-8dR" secondAttribute="bottom" id="uuW-KY-DcL"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="346" height="77"/>
+            <connections>
+                <outlet property="imageView" destination="lze-vW-8dR" id="iz7-bH-G3n"/>
+                <outlet property="infoLabel" destination="sXn-n0-pmp" id="IaE-Ra-cOw"/>
+            </connections>
+            <point key="canvasLocation" x="344.92753623188406" y="114.84375"/>
+        </collectionViewCell>
+    </objects>
+</document>

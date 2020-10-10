@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NormalCellID" id="gTV-IL-0wX" customClass="CollectionViewNormalCell">
+            <rect key="frame" x="0.0" y="0.0" width="290" height="202"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="290" height="202"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="46.square.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="uVk-Yc-8v0">
+                        <rect key="frame" x="0.0" y="178" width="25" height="22.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="0cx-c3-qyd"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="2OD-TY-nPo"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="CiS-e8-nGQ"/>
+                            <constraint firstAttribute="width" constant="25" id="dCL-tR-fYf"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="主播直播信息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQV-uF-Ice">
+                        <rect key="frame" x="30" y="177" width="104" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="gB9-oc-f2i"/>
+                            <constraint firstAttribute="width" constant="104" id="ifL-Kd-3iG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VLN-Vm-ZfM">
+                        <rect key="frame" x="0.0" y="0.0" width="290" height="167"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R3k-0S-4Yl">
+                        <rect key="frame" x="169" y="0.0" width="116" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="KUF-p9-Wb5"/>
+                            <constraint firstAttribute="width" constant="116" id="KuT-3o-dcI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="观看人数" image="mappin.and.ellipse" catalog="system">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="watchCount:" destination="gTV-IL-0wX" eventType="touchUpInside" id="NHj-fX-5Fx"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZuM-VM-PJt">
+                        <rect key="frame" x="0.0" y="150" width="35.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="jQV-uF-Ice" firstAttribute="leading" secondItem="uVk-Yc-8v0" secondAttribute="trailing" constant="5" id="2N2-Fx-IRT"/>
+                <constraint firstItem="ZuM-VM-PJt" firstAttribute="leading" secondItem="VLN-Vm-ZfM" secondAttribute="leading" id="50t-g6-npQ"/>
+                <constraint firstItem="uVk-Yc-8v0" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="7WP-xx-dCr"/>
+                <constraint firstAttribute="trailing" secondItem="VLN-Vm-ZfM" secondAttribute="trailing" id="8cc-iC-wDy"/>
+                <constraint firstItem="ZuM-VM-PJt" firstAttribute="bottom" secondItem="VLN-Vm-ZfM" secondAttribute="bottom" id="Ria-Zf-fNv"/>
+                <constraint firstItem="jQV-uF-Ice" firstAttribute="top" secondItem="uVk-Yc-8v0" secondAttribute="top" id="cgR-V9-ie8"/>
+                <constraint firstItem="jQV-uF-Ice" firstAttribute="bottom" secondItem="uVk-Yc-8v0" secondAttribute="bottom" id="fKe-cC-iDV"/>
+                <constraint firstItem="VLN-Vm-ZfM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="k91-Ht-Mjr"/>
+                <constraint firstItem="jQV-uF-Ice" firstAttribute="top" secondItem="VLN-Vm-ZfM" secondAttribute="bottom" constant="10" id="ml5-VK-dwg"/>
+                <constraint firstItem="R3k-0S-4Yl" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="vQj-VT-3BA"/>
+                <constraint firstItem="VLN-Vm-ZfM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="wlr-HS-x8W"/>
+                <constraint firstAttribute="trailing" secondItem="R3k-0S-4Yl" secondAttribute="trailing" constant="5" id="x5P-OR-BxD"/>
+                <constraint firstAttribute="bottom" secondItem="uVk-Yc-8v0" secondAttribute="bottom" id="zxQ-kx-S30"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="290" height="202"/>
+            <connections>
+                <outlet property="anchorInfoLabel" destination="jQV-uF-Ice" id="VYK-Km-dHw"/>
+                <outlet property="anchorView" destination="VLN-Vm-ZfM" id="Ijf-6V-WtO"/>
+                <outlet property="roomInfoLabel" destination="ZuM-VM-PJt" id="YSW-NJ-An2"/>
+                <outlet property="watchingCount" destination="R3k-0S-4Yl" id="D1h-fY-Ghq"/>
+            </connections>
+            <point key="canvasLocation" x="305.79710144927537" y="154.6875"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="46.square.fill" catalog="system" width="128" height="114"/>
+        <image name="mappin.and.ellipse" catalog="system" width="118" height="128"/>
+    </resources>
+</document>
